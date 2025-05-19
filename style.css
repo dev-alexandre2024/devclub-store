@@ -146,25 +146,111 @@ header nav ul li:hover::after {
     color: #00f7ff;
     font-weight: 600;
     letter-spacing: 2px;
-    margin-bottom: 10px;  
+    margin-bottom: 10px;
 }
 
-.product-name{
-font-size: 4.5rem;
- font-family: "Orbitron", sans-serif;
- line-height: 1.1;
- margin-bottom: 20x;
+.product-name {
+    font-size: 4.5rem;
+    font-family: "Orbitron", sans-serif;
+    line-height: 1.1;
+    margin-bottom: 20x;
 }
 
-.description{
-font-size: 1.1rem;
-color: #b8b8d0;
-line-height: 1.6;
-margin-bottom: 30px;
-max-width: 600px;
+.description {
+    font-size: 1.1rem;
+    color: #b8b8d0;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 600px;
 }
+
 button {
     padding: 10px;
-    border-radius: 10px;
-    background-image: linear-gradient(to right, blue, rgb(0, 225, 255));
+    border-radius: 30px;
+    background-image: linear-gradient(to left, blue, rgb(0, 225, 255));
+    padding: 12px 16px;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: 2.5s;
+}
+
+button:hover {
+    background-image: linear-gradient(to left, rgb(0, 225, 255), blue);
+    transition: 2.5s;
+}
+
+.arrows {
+    padding: 10px;
+    position: absolute;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 5;
+
+}
+
+.arrow-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(0, 247, 255, 0.3);
+}
+
+.indicators {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    z-index: 5;
+
+}
+
+
+.numbers {
+    font-family: "orbitron", sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.dots {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 40px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+
+.dot.active {
+    background-color: #00f7ff;
+    box-shadow: 0 0 10px rgba(0, 247, 255, 0.5);
+}
+
+.tech-circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.circle{
+position: absolute;
+
 }
